@@ -26,8 +26,14 @@ class TodoListPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('リスト一覧'),
       ),
-      body: Center(
-        child: Text('リスト一覧画面'),
+      body: ListView(
+        children: <Widget>[
+          Card(
+            child: ListTile(
+              title: Text('玉ねぎを買う')
+            ),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
